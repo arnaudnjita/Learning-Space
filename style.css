@@ -33,10 +33,10 @@ nav > .logo-div > p {
   font-size: 18px;
   font-weight: 500;
 }
-.menu-icon-div, .menu-icon > img {
-    display: none;
+.menu-icon-div,
+.menu-icon > img {
+  display: none;
 }
-
 
 /* Main */
 main {
@@ -79,6 +79,11 @@ p {
   background: #5c48fa;
   border: 2px solid #ffffff;
   border-radius: 8px;
+}
+
+.btn-div:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 20px #5c48fa60;
 }
 .main-divr {
   display: flex;
@@ -542,7 +547,8 @@ p {
   .links-div .a {
     display: none;
   }
-  .menu-icon-div, .menu-icon > img {
+  .menu-icon-div,
+  .menu-icon > img {
     display: block;
   }
   .responsive {
@@ -598,30 +604,3 @@ p {
     gap: 5px;
   }
 }
-
-/* @media (max-width: 700px) {
-  .links-div > a {
-    display: none;
-    font-size: 200px;
-  }
-  .links-div a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .links-div.responsive {
-    position: relative;
-  }
-  .links-div.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .links-div.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-} */
