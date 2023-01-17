@@ -15,15 +15,12 @@
           <p>Learning Space</p>
         </div>
         <div class="links-div" id="nav-links">
-          <a href="" class="a">Home</a>
-          <a href="" class="a">Features</a>
-          <a href="" class="a">Pricing</a>
-          <a href="" class="a">About us</a>
+          <a href="#" class="a active">Home</a>
+          <a href="#sec3" class="a">Features</a>
+          <a href="#" class="a">Pricing</a>
+          <a href="#sec6" class="a">About us</a>
         </div>
-        <div
-          class="menu-icon-div"
-          onclick="myFunction()"
-        >
+        <div class="menu-icon-div" onclick="myFunction()">
           <img class="menu-icon" src="./Assets/menu-fill.png" alt="" />
         </div>
       </nav>
@@ -121,7 +118,7 @@
         </div>
       </div>
     </section>
-    <section class="section3">
+    <section class="section3" id="sec3">
       <div class="section3-div1">
         <h1>Some of our amazing features</h1>
         <p>
@@ -221,7 +218,7 @@
         </div>
       </div>
     </section>
-    <section class="section6">
+    <section class="section6" id="sec6">
       <h1>Meet our team</h1>
       <div class="team-div">
         <div class="team-div-item">
@@ -291,6 +288,16 @@
         } else {
           x.className = "links-div";
         }
+      }
+
+      var header = document.getElementById("nav-links");
+      var btns = header.getElementsByClassName("a");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
       }
     </script>
   </body>

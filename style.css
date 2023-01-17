@@ -29,6 +29,14 @@ nav > .links-div > a {
   font-size: 18px;
   font-weight: 500;
 }
+.links-div > a:hover {
+  font-weight: 500;
+  color: #5c48fa;
+}
+.links-div > .active {
+  font-weight: 500;
+  color: #5c48fa;
+}
 nav > .logo-div > p {
   font-size: 18px;
   font-weight: 500;
@@ -134,7 +142,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 85px;
+  padding: 90px 85px 100px 85px;
   gap: 50px;
   text-align: center;
   background: linear-gradient(
@@ -185,7 +193,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 85px;
+  padding: 80px 85px 100px 85px;
   gap: 50px;
   text-align: center;
 }
@@ -337,7 +345,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 85px;
+  padding: 80px 85px 100px 85px;
   gap: 50px;
   text-align: center;
   background-color: #5c48fa;
@@ -381,7 +389,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 100px 85px;
+  padding: 80px 85px 100px 85px;
   gap: 50px;
   text-align: center;
 }
@@ -402,7 +410,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 50px 85px;
+  padding: 50px 50px;
   gap: 1.875rem;
   text-align: center;
   color: #ffffff;
@@ -455,7 +463,7 @@ p {
 @media (max-width: 1200px) {
   main {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     padding: 50px 50px;
@@ -463,15 +471,15 @@ p {
   .main-divl {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 20px;
     width: 100%;
   }
   .main-divr {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     padding: 50px 0 0 0;
   }
   .tractions {
@@ -490,15 +498,38 @@ p {
     align-items: center;
     text-align: center;
   }
+  .main-divl > h1 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 950px) {
   .section3-div2 > .div-item {
     width: 40%;
   }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 50px;
+  }
+  .main-divl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+  }
   .main-divr {
     width: 80%;
   }
+  .tractions {
+    padding: 0px 30px;
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 800px) {
@@ -518,9 +549,18 @@ p {
   .footer {
     padding: 100px 50px;
   }
+  .main-divr {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 50px 0 0 0;
+  }
 }
 
 @media (max-width: 700px) {
+  main {
+    padding: 30px 10px;
+  }
   .section2-div2 {
     flex-direction: column;
     width: 100%;
@@ -571,13 +611,23 @@ p {
     font-weight: 500;
     text-decoration: none;
   }
+  .section3,
+  .section4,
+  .section5,
+  .section6,
+  .section7,
+  .footer {
+    padding: 100px 20px;
+  }
 }
 
 @media (max-width: 600px) {
   .section3-div2 > .div-item {
     width: 100%;
   }
-
+  main {
+    padding: 30px 10px;
+  }
   /* testimonials */
   .section4-div2 .comment > .quote {
     display: none;
@@ -591,6 +641,7 @@ p {
   .main-divr {
     width: 100%;
   }
+  
 }
 
 @media (max-width: 410px) {
@@ -602,5 +653,18 @@ p {
     align-items: baseline;
     gap: 5px;
   }
+  main {
+    padding: 30px 25px;
+  }
+  .main-divl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+  }
 }
+
+
 
