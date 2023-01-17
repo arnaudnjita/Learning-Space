@@ -94,7 +94,6 @@ p {
   border: 3px solid #ffffff;
   border-radius: 8px;
 }
-
 .btn-div:hover {
     cursor: pointer;
     box-shadow: 2px 2px 20px #50505050;
@@ -105,11 +104,12 @@ p {
   width: 100%;
   padding: 30px 0 0 0;
 }
-.btn-div > p {
+.btn-div > a {
   font-size: 18px;
   font-weight: 500;
   color: #ffffff;
   width: max-content;
+  text-decoration: none;
 }
 .tractions {
   display: flex;
