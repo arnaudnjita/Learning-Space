@@ -33,10 +33,10 @@ nav > .logo-div > p {
   font-size: 18px;
   font-weight: 500;
 }
-.menu-icon-div,
-.menu-icon > img {
-  display: none;
+.menu-icon-div, .menu-icon > img {
+    display: none;
 }
+
 
 /* Main */
 main {
@@ -77,14 +77,14 @@ p {
   gap: 10px;
   width: max-content;
   background: #5c48fa;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 8px;
 }
 
 .btn-div:hover {
-  cursor: pointer;
-  box-shadow: 2px 2px 20px #5c48fa60;
-}
+    cursor: pointer;
+    box-shadow: 2px 2px 20px #50505050;
+}                  
 .main-divr {
   display: flex;
   justify-content: center;
@@ -547,8 +547,7 @@ p {
   .links-div .a {
     display: none;
   }
-  .menu-icon-div,
-  .menu-icon > img {
+  .menu-icon-div, .menu-icon > img {
     display: block;
   }
   .responsive {
@@ -604,3 +603,4 @@ p {
     gap: 5px;
   }
 }
+
